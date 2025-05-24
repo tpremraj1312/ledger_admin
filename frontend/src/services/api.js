@@ -1,5 +1,5 @@
 export async function loginAdmin(email, password) {
-  const response = await fetch("http://localhost:5000/admin/login", {
+  const response = await fetch(`${import.meta.env.VITE_ADMIN_BACKEND_URL/admin/login}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
