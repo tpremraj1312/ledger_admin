@@ -8,7 +8,7 @@ import adminAuthRoutes from './routes/adminAuthRoutes.js';
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin: process.env.ADMIN_FRONTEND || "http://localhost:5173" , // allow frontend origin
+  origin: process.env.VITE_ADMIN_FRONTEND || "http://localhost:5173" , // allow frontend origin
   credentials: true, // optional: if you're using cookies or auth headers
 }));
 

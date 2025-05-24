@@ -20,6 +20,7 @@ export default function Login() {
       localStorage.setItem('adminToken', data.token);
       navigate('/dashboard');
     } catch (err) {
+      console.log(err);
       setError(err.response?.data?.message || 'Login failed. Please try again.');
     } finally {
       setLoading(false);
